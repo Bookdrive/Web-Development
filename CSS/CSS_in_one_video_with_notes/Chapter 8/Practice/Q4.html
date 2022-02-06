@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 30px;
+            background-color: black;
+            width: 100vw;
+        }
+
+        footer {
+            height: 20px;
+            background-color: black;
+            width: 100vw;
+        }
+
+        .content {
+            background-color: red;
+            height: 55vh;
+            width: 100vw;
+        }
+
+        .slider {
+            background-color: white;
+            height: 40vh;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .drag {
+            height: 40vh;
+            width: 30vw;
+            transform: translate(-40vw);
+            animation: slideImage2 2s linear 1s infinite normal;
+        }
+
+        .bike {
+            height: 40vh;
+            width: 50vw;
+            transform: translate(8vw);
+            animation: slideImage1 3s linear infinite normal;
+        }
+
+        /* .bg {
+            height: 40vh;
+            width: 50vw;
+            transform: translate(40vw);
+            animation: slideImage3 2s linear 1 normal;
+        } */
+
+        @keyframes slideImage1 {
+            0% {
+                transform: translate(8w);
+            }
+
+            100% {
+                transform: translate(80vw);
+            }
+        }
+
+        @keyframes slideImage2 {
+            0% {
+                transform: translate(-40w);
+            }
+
+            100% {
+                transform: translate(8vw);
+            }
+        }
+
+        /* @keyframes slideImage3 {
+            0% {
+                transform: translate(-50w);
+            }
+
+            100% {
+                transform: translate(8vw);
+            } 
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="slider">
+            <img src="/Notes_And_Reference/dragon.png" alt="dragon" class="drag">
+            <img src="/Notes_And_Reference/1.avif" alt="bike" class="bike">
+            <!-- <img src="/Notes_And_Reference/bg.jpg" alt="background" class="bg"> -->
+        </section>
+        <section class="content"></section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

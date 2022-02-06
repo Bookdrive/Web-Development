@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+
+<body>
+    <header>
+        <h1>Race Registration</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend><b>Enter Details</b></legend>
+                <p>
+                    <label for="fname">First Name : </label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>&emsp;
+                    <label for="lname">Last Name : </label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </p>
+                <p>
+                    Select Race Type :
+                    <label for="fullrun5k">
+                        <input type="radio" id="fullrun5k" name="racetype" value="Full Run 5k"> Full Run 5k &emsp;
+                    </label>
+                    <label for="halfmarathon">
+                        <input type="radio" id="halfmarathon" name="racetype" value="Half Marathon" checked> Half
+                        Marathon
+                    </label>
+                    &emsp;
+                    <label for="fullmarathon">
+                        <input type="radio" id="fullmarathon" name="racetype" value="Full Marathon"> Full Marathon
+                        &emsp;
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Email : </label>
+                    <input type="emal" id="email" name="email" placeholder="Email">&emsp;
+                    <label for="password">Password : </label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </p>
+                <p>
+                    <label for="agegroup">Select Age Group : </label>
+                    <select id="agegroup" name="agegroup">
+                        <option value="Under 16">Under 16</option>
+                        <option value="Under 18" selected>Under 18</option>
+                        <option value="Under 24">Under 24</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Register!</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

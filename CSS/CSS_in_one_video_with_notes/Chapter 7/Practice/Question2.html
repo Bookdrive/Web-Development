@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+        }
+
+        nav ul {
+            display: inline-grid;
+            grid-gap: 20px;
+            grid-template-columns: auto auto auto;
+        }
+
+        nav ul li {
+            list-style: none;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+            align-items: baseline;
+            height: 500px;
+            width: 100vw;
+        }
+
+        .background {
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 100vw;
+        }
+
+        .image {
+            background-image: url("/Notes_And_Reference/index.jpg");
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <img src="/Notes_And_Reference/bg.jpg" alt="background" class="background">
+    <main>
+        <img src="/Notes_And_Reference/index.jpg" alt="akshay" class="image">
+        <img src="/Notes_And_Reference/index.jpg" alt="akshay" class="image">
+        <img src="/Notes_And_Reference/index.jpg" alt="akshay" class="image">
+    </main>
+</body>
+
+</html>

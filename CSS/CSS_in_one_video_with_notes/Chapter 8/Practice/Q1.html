@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 30px;
+            width: 100vw;
+            background-color: black;
+        }
+
+        .progress {
+            height: 1vh;
+            width: 0px;
+            background-color: red;
+            animation: progressBar 4s ease-in-out 1 normal;
+
+        }
+
+        main {
+            background-color: orange;
+            height: 80vh;
+            width: 100vw;
+        }
+
+        @keyframes progressBar {
+            0% {
+                height: 1vh;
+                width: 0px;
+            }
+
+            60% {
+                height: 1vh;
+                width: 50vw;
+            }
+
+            100% {
+                height: 1vh;
+                width: 100vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="progress"></div>
+        <nav></nav>
+    </header>
+    <main></main>
+</body>
+
+</html>
