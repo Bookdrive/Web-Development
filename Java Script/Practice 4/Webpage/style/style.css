@@ -95,7 +95,9 @@ header {
   font-size: 2rem;
   margin-bottom: 0.6em;
 }
-
+span {
+  display: none;
+}
 /*____________________________ Main _________________*/
 main {
   margin: 3rem auto;
