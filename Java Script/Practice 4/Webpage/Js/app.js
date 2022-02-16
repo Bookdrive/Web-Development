@@ -37,10 +37,16 @@
 // button.setAttribute("style", "background-color:Yellow")
 // console.log(button.getAttribute("class"));
 
-const navLists = document.querySelectorAll("ul.navigation-list li");
-for (let navList of navLists) {
-    navList.style.backgroundColor = "white";
-    navList.style.color = "black";
-    navList.style.fontWeight = "700";
-    navList.style.border = "1rem solid black";
-}
+// const navLists = document.querySelectorAll("ul.navigation-list li");
+// for (let navList of navLists) {
+//     navList.style.backgroundColor = "white";
+//     navList.style.color = "black";
+//     navList.style.fontWeight = "700";
+//     navList.style.border = "1rem solid black";
+// }
+
+// const header_content = document.querySelector("div.header-content");
+// header_content.innerHTML = "<h1>Added Through The Inner Html</h1>";
+// header_content.innerHTML += "<a class=\" button button-headline \">InnerHTML</a>";
+// console.log(header_content.innerHTML);
+console.log(document.querySelector("body"));

@@ -37,6 +37,7 @@ li,
 p {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+  list-style: none;
 }
 
 .button {
@@ -118,6 +119,23 @@ main {
   width: 15%;
   padding: 0.6rem;
   border-radius: 0;
+  background-color: black;
+  color: white;
+}
+
+.todo-list {
+  margin-top: 1rem;
+  text-align: left;
+}
+.todo-list li {
+  background: black;
+  color: rgb(0, 195, 255);
+  padding: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.bg-dark {
   background-color: black;
   color: white;
 }
