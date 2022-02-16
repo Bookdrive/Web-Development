@@ -35,6 +35,18 @@ li {
 header {
   background-color: rgb(8, 29, 68);
   padding-top: 10px;
+  animation: slider 2s ease-in-out forwards;
+  position: relative;
+  transform: translate(0, -100px);
+}
+@keyframes slider {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:100;
+        transform: translate(0, 0);
+    }
 }
 .navbar .logo {
   float: left;
@@ -96,13 +108,26 @@ header {
 
 .contact-info {
   width: 45%;
-  background-color: #65ebc0;
+  background-image: linear-gradient( 68.4deg,  rgb(0, 186, 211) -0.4%, rgba(99,251,215,1) 100.2% );
   padding: 3rem 4rem;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  transform: translate(-500px);
+  animation: box-appear 2s ease-in-out forwards;
 }
+@keyframes box-appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:100%;
+        transform: translate(0);
+    }
+}
+
 .contact-info-top {
   margin-bottom: 3rem;
   color: rgb(8, 29, 68);
@@ -185,7 +210,7 @@ header {
 
 .contact-form-button {
   grid-column: 1 / span 2;
-  text-align: center;
+  justify-self: center;
 }
 
 .contact-form-button button {
