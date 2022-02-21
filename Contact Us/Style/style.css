@@ -76,11 +76,28 @@ header {
   clear: both;
   display: block;
 }
+.img-container{
+    background: url('./pages.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+    z-index: -1;
+}
 /*_____________________ Main _____________________*/
-
+main{
+    position: relative;
+    padding-bottom: 5rem;
+}
 /* ___________ Main Heading ___________ */
 .main-heading {
-  margin: 4rem auto;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
   text-align: center;
   color: rgb(8, 29, 68);
 }
@@ -96,7 +113,7 @@ header {
 
 .contact-us {
   background-color: #fff;
-  margin: 4rem auto;
+  margin: auto;
   display: flex;
   padding: 1rem 1rem;
   justify-content: space-between;
