@@ -77,7 +77,7 @@ header {
   display: block;
 }
 .img-container{
-    background: url('./pages.jpg');
+    background: url('/pages.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
