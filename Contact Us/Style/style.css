@@ -40,13 +40,13 @@ header {
   transform: translate(0, -100px);
 }
 @keyframes slider {
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:100;
-        transform: translate(0, 0);
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+    transform: translate(0, 0);
+  }
 }
 .navbar .logo {
   float: left;
@@ -76,11 +76,28 @@ header {
   clear: both;
   display: block;
 }
+.img-container {
+  background: url("/Images/pages.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 20%;
+  z-index: -1;
+}
 /*_____________________ Main _____________________*/
-
+main {
+  position: relative;
+  padding-bottom: 5rem;
+}
 /* ___________ Main Heading ___________ */
 .main-heading {
-  margin: 4rem auto;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
   text-align: center;
   color: rgb(8, 29, 68);
 }
@@ -96,7 +113,7 @@ header {
 
 .contact-us {
   background-color: #fff;
-  margin: 4rem auto;
+  margin: auto;
   display: flex;
   padding: 1rem 1rem;
   justify-content: space-between;
@@ -108,7 +125,11 @@ header {
 
 .contact-info {
   width: 45%;
-  background-image: linear-gradient( 68.4deg,  rgb(0, 186, 211) -0.4%, rgba(99,251,215,1) 100.2% );
+  background-image: linear-gradient(
+    68.4deg,
+    rgb(0, 186, 211) -0.4%,
+    rgba(99, 251, 215, 1) 100.2%
+  );
   padding: 3rem 4rem;
   border-radius: 1.5rem;
   display: flex;
@@ -118,14 +139,14 @@ header {
   transform: translate(-500px);
   animation: box-appear 2s ease-in-out forwards;
 }
-@keyframes box-appear{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity:100%;
-        transform: translate(0);
-    }
+@keyframes box-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0);
+  }
 }
 
 .contact-info-top {
