@@ -85,9 +85,12 @@ header{
     list-style: none;
     display: flex;
 }
+nav{
+    margin-left: 4.5rem;
+}
 nav ul li{
     padding-left: 3rem;
-    position: relative;
+    /* position: relative; */
 }
 /* Navigation links animation */
 
@@ -117,7 +120,8 @@ nav ul li:hover::after {
 .showcase .box{
     margin: 0 1rem;
     border-radius: 20px;
-    box-shadow: 0 2px 8px #666;
+    /* box-shadow: 0 2px 8px #666; */
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 #def8fd;
     background-color: #90E0FF;
 
 }
@@ -180,7 +184,8 @@ margin-bottom: 50px;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    box-shadow: 0 4px 10px #666;
+    /* box-shadow: 0 4px 10px #666; */
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.25), -5px -5px 10px 0 #def8fd;
 }
 .container .flipbook .page{
     display: flex;
@@ -361,8 +366,11 @@ section h1{
         margin: 0 2rem;
         
     }
+    nav{
+        margin-left: 2rem;
+    }
     nav ul li{
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
     
 
